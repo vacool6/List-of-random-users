@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="action.js"></script>
+    <style>
+      body {
+        background-color: rgb(113, 106, 66);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      header {
+        text-align: center;
+        color: white;
+      }
+      button {
+        width: 20rem;
+        height: 5rem;
+        font-size: 2rem;
+        color: white;
+        background-color: brown;
+        border: none;
+        border-radius: 2rem;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Generate a list of random user's</h1>
+      <button>Generate</button>
+    </header>
+    <br />
+    <div class="container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
