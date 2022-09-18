@@ -44,29 +44,16 @@ button.addEventListener("click", () => {
       address = data.location.country;
       st = data.location.state;
 
-      //   if (name === undefined) {
-      //     div.remove();
-      //   } else {
-      //     image.src = `${img}`;
-      //     title.innerText = `Full name: ${name}`;
-      //     phone.innerText = `Phone number: ${phoneNum}`;
-      //     emailID.innerText = `Mail ID: ${email}`;
-      //     location.innerText = `Country: ${address}`;
-      //     state.innerText = `State: ${st}`;
-      //   }
+         if (name === undefined) {
+           div.remove();
+         } else {
+           image.src = `${img}`;
+           title.innerText = `Full name: ${name}`;
+           phone.innerText = `Phone number: ${phoneNum}`;
+           emailID.innerText = `Mail ID: ${email}`;
+           location.innerText = `Country: ${address}`;
+           state.innerText = `State: ${st}`;
+         }
     })
     .catch((err) => console.log(err));
-
-  setTimeout(() => {
-    if (name === undefined) {
-      div.remove();
-    } else {
-      image.src = `${img}`;
-      title.innerText = `Full name: ${name}`;
-      phone.innerText = `Phone number: ${phoneNum}`;
-      emailID.innerText = `Mail ID: ${email}`;
-      location.innerText = `Country: ${address}`;
-      state.innerText = `State: ${st}`;
-    }
-  }, 3000);
 });
